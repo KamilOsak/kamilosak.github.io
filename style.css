@@ -1,42 +1,38 @@
 body
 {
-  margin:0;
-  margin:0 auto;
-  background-color: #00061c;
+  margin: 0 auto;
+  background-color: #002036;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  color: white;
+}
+
+.menu_style, .logo {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.header, .footer {
+  background: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  margin: 0 auto;
 }
 
 .header {
   height: 8%;
-  margin: 0 auto;
   position: fixed;
-  left: 17.5%;
   top: 0;
-  width: 82.5%;
-  background-color: red;
 }
 
 .logo {
-  width: 17.5%;
-  height: 25%;
-  background-image: url("pictures/logo/logo-idealne.png");
-  background-size: 97% 80%;
+  width: 40%;
   float: left;
-  position: fixed;
-  left: 0;
-  top: 0;
-  transition-duration:1s;
-  background-repeat: no-repeat;
-  background-color: red;
-}
-.menu_style {
   height: 100%;
-  width: 15.5%;
-  background-color: red;
-  text-align: center;
-  line-height: 100%;
+}
+
+.menu_style {
   float: left;
-  line-height: 400%;
+  width: 15%;
+  text-align: center;
+  line-height: 500%;
   margin: 0 auto;
 }
 
@@ -46,6 +42,26 @@ body
   margin-top: 4%;
   height: 150%;
   width: 65%;
-  background-color: yellow;
-  text-align: center; 
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+  height: 15%;
+}
+
+.content, .footer {
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.template, .creator {
+  width: 50%;
+  float: left;
+  margin: 0 auto;
+  height: 75%;
+}
+
+.creator {
+  text-align: right;
 }
