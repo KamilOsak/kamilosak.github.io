@@ -65,3 +65,24 @@ body
 .creator {
   text-align: right;
 }
+
+.icon_insta, .icon_yt {
+  height: 64px;
+  width: 64px;
+  float: left;
+  background-color: white;
+  border-radius: 12px;
+  margin: 5px;
+}
+.icon_insta{
+  background-image: url("png/instagram.png");
+}
+
+.icon_yt {
+  background-image: url("png/youtube.png");
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
