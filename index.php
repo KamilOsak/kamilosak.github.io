@@ -7,10 +7,10 @@
   <body>
     <div class="header">
       <div class="logo"></div>
-      <a class="menu_style" href="index.html?menu=1">Strona główna</a>
-      <a class="menu_style" href="index.html?menu=2">Strony</a>
-      <a class="menu_style" href="index.html?menu=3">O mnie</a>
-      <a class="menu_style" href="index.html?menu=4">Kontakt</a>
+      <a class="menu_style" id="main_page" href="index.php?menu=main_page">Strona główna</a>
+      <a class="menu_style" id="pages" href="index.php?menu=pages">Strony</a>
+      <a class="menu_style" id="author" href="index.php?menu=author">O mnie</a>
+      <a class="menu_style" id="contact" href="index.php?menu=contact">Kontakt</a>
     </div>
     <div class="content" id="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus imperdiet justo sed placerat. Aliquam vel mauris quis orci tincidunt pulvinar. Aliquam tristique rhoncus nibh, at viverra est vestibulum vitae. Praesent viverra imperdiet tempor. Quisque lobortis fermentum commodo. Vestibulum varius nunc vitae venenatis scelerisque. Quisque ac euismod libero, et gravida ex. Aliquam vehicula viverra justo, a finibus leo rhoncus ac. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi in erat eu metus pretium accumsan vitae quis augue. Praesent feugiat velit vitae ultrices suscipit. Suspendisse facilisis bibendum bibendum.<br>
 
@@ -22,6 +22,32 @@
     <br>
     Morbi quis varius velit. Phasellus porta sagittis nulla, vitae blandit est ornare vitae. Cras gravida congue nunc, non sodales libero ultrices nec. Etiam ornare tempor dictum. Aenean sed sapien sodales, congue augue eu, posuere sapien. Nulla dignissim hendrerit ligula, sit amet efficitur tortor facilisis id. Vivamus elementum tempus mollis. Aenean dapibus id velit vel pretium.
   <br>
+
+  <?php
+    if(isset($_GET['menu'])) {
+      $menu = $_GET['menu'];
+
+      if($menu == 'main_page') {
+        echo 'STRONA GLOWNA';
+      }
+
+      if($menu == 'page') {
+        echo 'STRONY';
+      }
+
+      if($menu == 'author') {
+        echo 'O AUTORZE';
+      }
+
+      if($menu == 'contact') {
+        echo 'KONTAKT';
+      }
+    }
+
+    else {
+      echo 'BLAD';
+    }
+  ?>
   </div>
   <div class="footer">
     <div class="template">
@@ -33,5 +59,7 @@
       Created by: kml
     </div>
   </div>
+
+
   </body>
 </html>

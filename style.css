@@ -29,6 +29,7 @@ body
 }
 
 .menu_style {
+  height: 100%;
   float: left;
   width: 15%;
   text-align: center;
@@ -74,7 +75,7 @@ body
   border-radius: 12px;
   margin: 5px;
 }
-.icon_insta{
+.icon_insta {
   background-image: url("png/instagram.png");
 }
 
